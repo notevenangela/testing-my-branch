@@ -29,6 +29,8 @@ import {
   IconTrash,
 } from "@tabler/icons-react";
 
+const role: string[] = []
+
 export default function VolunteerRegisterPage() {
   const form = useForm({
     initialValues: {
@@ -43,7 +45,7 @@ export default function VolunteerRegisterPage() {
       state: "",
       zip: "",
       dob: "",
-      roles: [],
+      roles: role,
       availability: {
         mon: {
           morning: false,
@@ -528,7 +530,7 @@ export default function VolunteerRegisterPage() {
                 <Button
                   size="md"
                   radius="md"
-                  onClick={form.onSubmit(handleSubmit)}
+                  onClick={() => form.onSubmit(handleSubmit)}
                 >
                   Create Account
                 </Button>
