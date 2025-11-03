@@ -578,7 +578,7 @@ export default function VolunteerRegisterPage() {
 
               <Text size="sm" lh={1.5}>
                 We connect passionate volunteers with real community needs.
-                Whether you're supporting outreach events, helping families, or
+                Whether you&apos;re supporting outreach events, helping families, or
                 assisting with operations, your time directly impacts the people
                 we serve.
               </Text>
